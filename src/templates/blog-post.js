@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Refs from "../components/refs"
+import Paper from "../components/paper"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -38,6 +40,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Refs refs={post.frontmatter.refs} />
+        <Paper paper={post.frontmatter.paper} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -96,6 +100,11 @@ export const pageQuery = graphql`
         date(formatString: "Do MMMM YYYY")
         description
         tags
+        refs
+        paper {
+          name
+          published
+        }
       }
     }
   }

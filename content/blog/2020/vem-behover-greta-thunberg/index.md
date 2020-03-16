@@ -3,6 +3,9 @@ title: "Replik: Vem behöver Greta Thunberg?"
 date: "2020-02-09"
 description: "Svar på John Curovacs tankar om hur vi räddar oss från kapitalismen genom kapitalismen"
 tags: ["klimatet", "kapitalism"]
+paper:
+  name: Lokaltidningen
+  published: false
 ---
 
 Käre krönikör John Curovac, tack för din tolkning av fenomenet Greta Thunberg, men du är helt ute och cyklar. Först och främst, det Greta menar när hon säger att hennes barndom blivit stulen har ingenting med hennes personliga situation att göra, det handlar om att vi genom vårt nuvarande ekonomiska system har kommit till en punkt där ungdomar har klimatångest. Våra kära ungdomar som knappt påbörjat sitt liv får höra att vi är på väg mot en klimatkollaps och att det är vi människor som orsakat den. Förlåt, orsakar den. Och vi försöker inte direkt att göra något åt det. Unga människor ska inte behöva ha detta hängandes över sig men nu har vi satt dom i den sitsen. Det är dom som kommer lida för äldre generationers girighet. Greta är en röst för samhällets framtid, en grupp människor som ska ta över när vi är döda, och vi serverar inte det på något silverfat.
@@ -15,7 +18,3 @@ Klimatproblemet är ingen fråga som kan lösas genom att bojkotta företag som 
 Mvh  
 Max Malm  
 Tidningsbloggare
-
--
-
-Lokaltidningen valde att **inte** publicera insändaren.

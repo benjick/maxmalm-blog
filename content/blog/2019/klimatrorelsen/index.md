@@ -3,6 +3,13 @@ title: "Replik: Låter det inte misstänkt mycket som miljöpartistisk politik? 
 date: "2019-11-11"
 description: "Svar på Emma Jaensons felaktiga antaganden gällande klimatkrisen och djurhållning"
 tags: ["klimatet", "djurrätt"]
+refs:
+  - http://www.blt.se/ledare/later-det-inte-misstankt-mycket-som-miljopartistisk-politik/
+  - https://www.landlantbruk.se/debatt/fadderfar-skulle-halla-landskapet-oppet/
+  - http://www.jordbruksverket.se/webdav/files/SJV/Amnesomraden/Statistik,%20fakta/Arealer/JO10/JO10SM1601/JO10SM1601.pdf
+paper:
+  name: BLT
+  published: false
 ---
 
 Klimatrörelsen är under ständig attack från ekonomiska och privata intressen där halvsanningar presenteras och felaktiga slutsatser dras ifrån dessa. Enligt IPCC behöver vi en drastisk nedskärning av vår köttkonsumtion till förmån för klimatet, det räcker inte med att ställa om från fossila bränslen. Självklart väcker dessa rön känslor hos både de som konsumerar och producerar kött.
@@ -19,14 +26,3 @@ Viktigt att också poängtera ut är att värdefulla betesmarker bara utgör en 
 
 Max Malm  
 Djurrättsaktivist
-
-—
-
-BLT valde att **inte** publicera insändaren.
-
-—
-
-Referenser:
-* http://www.blt.se/ledare/later-det-inte-misstankt-mycket-som-miljopartistisk-politik/
-* https://www.landlantbruk.se/debatt/fadderfar-skulle-halla-landskapet-oppet/
-* http://www.jordbruksverket.se/webdav/files/SJV/Amnesomraden/Statistik,%20fakta/Arealer/JO10/JO10SM1601/JO10SM1601.pdf 

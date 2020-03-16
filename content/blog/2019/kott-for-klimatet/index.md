@@ -3,6 +3,13 @@ title: "Replik: Kött för klimatet"
 date: "2019-11-11"
 description: "Svar på Ester Hedins grundlösa påståenden att svenskt kött skulle vara klimatsmart"
 tags: ["klimatet", "djurrätt"]
+refs:
+  - https://etidning.smp.se/669/eSMP/256569/2019-11-09/10507061/Kott-for-klimatet
+  - http://www.vethos.se/artiklar/oppna-landskap-och-biologisk-mangfald/
+  - https://www.landlantbruk.se/debatt/fadderfar-skulle-halla-landskapet-oppet/
+paper:
+  name: Smålandsposten
+  published: false
 ---
 
 “Svenskt kött är klimatsmart” skriver Ester Hedin i Smålandsposten den nionde november i sin ledarkolumn. Detta är såklart ännu en liberal halvsanning som man drar falska slutsatser från.
@@ -19,14 +26,3 @@ Man nämner inte heller något om att värdefulla betesmarker bara utgör en lit
 
 Max Malm  
 Djurrättsaktivist
-
--
-
-Smålandsposten valde att **inte** publicera insändaren.
-
-—
-
-Referenser:
-* https://etidning.smp.se/669/eSMP/256569/2019-11-09/10507061/Kott-for-klimatet
-* http://www.vethos.se/artiklar/oppna-landskap-och-biologisk-mangfald/
-* https://www.landlantbruk.se/debatt/fadderfar-skulle-halla-landskapet-oppet/
