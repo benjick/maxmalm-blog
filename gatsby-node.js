@@ -5,6 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const tagPageTemplate = path.resolve(`./src/templates/tags.js`)
   const result = await graphql(
     `
       {
@@ -21,6 +22,11 @@ exports.createPages = async ({ graphql, actions }) => {
                 title
               }
             }
+          }
+        }
+        tagsGroup: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
           }
         }
       }
@@ -45,6 +51,18 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
+      },
+    })
+  })
+
+  const tags = result.data.tagsGroup.group
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tag/${tag.fieldValue}/`,
+      component: tagPageTemplate,
+      context: {
+        tag: tag.fieldValue,
       },
     })
   })
