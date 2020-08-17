@@ -44,6 +44,13 @@ exports.createPages = async ({ graphql, actions }) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
 
+    let ogImagePluginContext;
+    if (post.node.frontmatter && post.node.frontmatter.title) {
+      ogImagePluginContext = {
+        title: post.node.frontmatter.title,
+      };
+    }
+
     createPage({
       path: post.node.fields.slug,
       component: blogPost,
@@ -51,6 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
+        ogImagePlugin: ogImagePluginContext,
       },
     })
   })
