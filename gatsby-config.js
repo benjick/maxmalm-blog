@@ -1,4 +1,4 @@
-const ogImagePlugin = require('./src/og-image')
+const ogImagePlugin = require('./src/og-image');
 
 module.exports = {
   siteMetadata: {
@@ -55,7 +55,6 @@ module.exports = {
         trackingId: `UA-55961206-2`,
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -77,13 +76,13 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-i18n',
-      options: {        
+      options: {
         langKeyDefault: 'sv',
-        useLangKeyLayout: false
-      }
+        useLangKeyLayout: false,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
-}
+};

@@ -1,10 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 
 // Components
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const TagsPage = ({
   data: {
@@ -13,14 +13,12 @@ const TagsPage = ({
       siteMetadata: { title },
     },
   },
-  location
+  location,
 }) => (
   <Layout location={location} title="Alla taggar">
-    <SEO
-      title={title}
-    />
+    <SEO title={title} />
     <ul>
-      {group.map(tag => (
+      {group.map((tag) => (
         <li key={tag.fieldValue}>
           <Link to={`/tag/${tag.fieldValue}/`}>
             {tag.fieldValue} ({tag.totalCount})
@@ -29,7 +27,7 @@ const TagsPage = ({
       ))}
     </ul>
   </Layout>
-)
+);
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
@@ -38,7 +36,7 @@ TagsPage.propTypes = {
         PropTypes.shape({
           fieldValue: PropTypes.string.isRequired,
           totalCount: PropTypes.number.isRequired,
-        }).isRequired
+        }).isRequired,
       ),
     }),
     site: PropTypes.shape({
@@ -47,9 +45,9 @@ TagsPage.propTypes = {
       }),
     }),
   }),
-}
+};
 
-export default TagsPage
+export default TagsPage;
 
 export const pageQuery = graphql`
   query {
@@ -65,4 +63,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

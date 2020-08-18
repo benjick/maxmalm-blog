@@ -1,28 +1,26 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 
 // Components
-import Layout from "../components/layout"
-import { Link, graphql } from "gatsby"
+import Layout from '../components/layout';
+import { Link, graphql } from 'gatsby';
 
 const Tags = ({ pageContext, data, location }) => {
-  const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+  const { tag } = pageContext;
+  const { edges, totalCount } = data.allMarkdownRemark;
+  const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`;
 
   return (
     <Layout location={location} title={tagHeader}>
       <ul>
         {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
+          const { slug } = node.fields;
+          const { title } = node.frontmatter;
           return (
             <li key={slug}>
               <Link to={slug}>{title}</Link>
             </li>
-          )
+          );
         })}
       </ul>
       {/*
@@ -31,8 +29,8 @@ const Tags = ({ pageContext, data, location }) => {
             */}
       <Link to="/tags">All tags</Link>
     </Layout>
-  )
-}
+  );
+};
 
 Tags.propTypes = {
   pageContext: PropTypes.shape({
@@ -51,13 +49,13 @@ Tags.propTypes = {
               slug: PropTypes.string.isRequired,
             }),
           }),
-        }).isRequired
+        }).isRequired,
       ),
     }),
   }),
-}
+};
 
-export default Tags
+export default Tags;
 
 export const pageQuery = graphql`
   query($tag: String) {
@@ -79,4 +77,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

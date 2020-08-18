@@ -66,7 +66,7 @@ const ogImagePlugin = {
     siteUrl: `https://maxmalm.se`,
     render: renderOgImage,
     concurrency: 10,
-  }
-}
+  },
+};
 
-module.exports = ogImagePlugin
+module.exports = ogImagePlugin;
