@@ -2,7 +2,7 @@
 title: "Lokalblaskorna och rasismen"
 date: "2020-08-17"
 description: "Lokaltidningarna tar inget ansvar för sina kanaler i social medier. Varför är det så?"
-tags: ["rasism"]
+tags: ["rasism", "kapitalism"]
 paper:
   name: ETC
 ---
