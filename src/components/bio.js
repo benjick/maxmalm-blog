@@ -26,9 +26,6 @@ const Bio = () => {
           author {
             name
           }
-          social {
-            twitter
-          }
         }
       }
     }

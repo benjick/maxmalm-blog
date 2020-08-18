@@ -6,11 +6,8 @@ module.exports = {
     author: {
       name: `Max Malm`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `benjick`,
-    },
+    description: `Max Malms shitty blog.`,
+    siteUrl: `https://maxmalm.se/`,
   },
   plugins: [
     ogImagePlugin,
