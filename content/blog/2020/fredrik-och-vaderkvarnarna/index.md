@@ -8,7 +8,7 @@ refs:
   - https://aktuelltfokus.se/nu-har-brunhogern-blivit-trollade-av-flashback-igen/
 paper:
   name: Smålandsposten
-  # published: false
+  published: false
 ---
 
 Ingen är väl lite förvånad över att Fredrik Haage sållat sig till “bevara alla statyer till vilket pris”-gänget men jag blev lite chockad av att Fredrik helt saknar källkritik och i sin anti-vänster vrede skulle driva ut extremhögern ännu längre på sin kant.

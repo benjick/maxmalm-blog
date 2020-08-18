@@ -6,8 +6,14 @@ const Paper = ({ paper }) => {
     return null
   }
   let text
+  if (paper) {
+    text = <>Skickat till {paper.name}.</>
+  }
   if (paper && paper.published === false) {
     text = <>{paper.name} valde att <strong>inte</strong> publicera artikeln.</>
+  }
+  if (paper && paper.published === true) {
+    text = <>{paper.name} valde att publicera artikeln.</>
   }
   if (!text) {
     return null
@@ -25,7 +31,7 @@ const Paper = ({ paper }) => {
           marginTop: 0,
         }}
       >
-        Resultat
+        Tidningen
       </h4>
       <p>{text}</p>
     </>

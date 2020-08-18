@@ -3,6 +3,8 @@ title: "Lokalblaskorna och rasismen"
 date: "2020-08-17"
 description: "Lokaltidningarna tar inget ansvar för sina kanaler i social medier. Varför är det så?"
 tags: ["rasism"]
+paper:
+  name: ETC
 ---
 
 På lokaltidningarnas Facebooksidor flödar rasismen runt om i landet. Hundvisslor som "Sverige har aldrig varit tryggare" och "Undrar om dom heter Svensson i efternamn..." duggar tätt i kommentarsfälten när rasister mobiliserar sig. Ofta bor de som skriver inte ens i lokaltidningens upptagningsområde. Gillamarkeringarna blir många och motstånd förlöjligas; "du fattar väl själv att det är så" används som någon faktagrund och mindre politiskt insatta försvarar gärna dessa hatiska personer. "Du kan inte veta att dom menade så" skriver Agda, 70 år gammal, i sin naivitet.

@@ -5,9 +5,9 @@ description: "Svar på Fredrik Haages trams om djurrättsaktivister"
 tags: ["djurrätt", "haage"]
 refs:
   - https://nxt.smp.se/ledare/bura-in-ekofascisterna
-# paper:
-#   name: Smålandsposten
-#   published: false
+paper:
+  name: Smålandsposten
+  published: false
 ---
 
 I vanlig ordning så skriver Fredrik Haage en ledare som är rent av anti-progressiv. Är det inte lögner om kött så är det svartmålning av aktivister. Nu vill han måla upp de som kämpar för djurens befrielse som fascister och vill likt sina partikamrater ha hårdare tag mot de som viger sitt liv åt att stoppa det onödiga lidandet och dödandet. 
