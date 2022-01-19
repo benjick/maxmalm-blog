@@ -21,7 +21,7 @@ Foto: Martina Vedin
 
 ![Ko i transport](./cow.jpg)
 
-Foto: Clément Martz
+Foto: @animalsarebeingstoo
 
 ![Aktivisten Max](./max.jpg)
 
