@@ -1,7 +1,7 @@
 ---
 title: 'Vattenbluffen, nu även i Sverige'
 date: '2022-08-27'
-description: ''
+description: Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt.
 tags: ['kapitalism']
 ---
 
