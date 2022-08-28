@@ -1,7 +1,6 @@
-import React from 'react';
-import { rhythm } from '../utils/typography';
+import React from "react";
 
-const Refs = ({ refs }) => {
+const Refs = ({ refs }: { refs?: string[] }) => {
   if (!refs) {
     return null;
   }
@@ -9,14 +8,14 @@ const Refs = ({ refs }) => {
     <>
       <hr
         style={{
-          marginBottom: rhythm(1),
+          marginBottom: "1.75rem",
         }}
       />
       <h4
         style={{
-          fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
-        }}>
+        }}
+      >
         Referenser
       </h4>
       {refs.map((ref) => (
