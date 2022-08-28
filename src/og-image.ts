@@ -1,4 +1,4 @@
-const renderOgImage = ({ title }) => {
+const renderOgImage = ({ title }: { title: string }) => {
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +60,7 @@ div h2 {
 `;
 };
 
-const ogImagePlugin = {
+export const ogImagePlugin = {
   resolve: `@akr4/gatsby-plugin-og-image`,
   options: {
     siteUrl: `https://maxmalm.se`,
@@ -68,5 +68,3 @@ const ogImagePlugin = {
     concurrency: 10,
   },
 };
-
-module.exports = ogImagePlugin;

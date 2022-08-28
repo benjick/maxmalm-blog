@@ -1,7 +1,6 @@
-import React from 'react';
-import { rhythm } from '../utils/typography';
+import React from "react";
 
-const Paper = ({ paper }) => {
+const Paper = ({ paper }: any) => {
   if (!paper) {
     return null;
   }
@@ -26,14 +25,15 @@ const Paper = ({ paper }) => {
     <>
       <hr
         style={{
-          marginBottom: rhythm(1),
+          marginBottom: "1.75rem",
         }}
       />
       <h4
         style={{
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
-        }}>
+        }}
+      >
         Tidningen
       </h4>
       <p>{text}</p>
