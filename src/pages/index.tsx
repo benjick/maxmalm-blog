@@ -4,29 +4,11 @@ import { Link, graphql, PageProps } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-type DataProps = {
-  site: {
-    siteMetadata?: {
-      title: string;
-    };
-  };
-  allMarkdownRemark: {
-    nodes: {
-      excerpt: string;
-      fields: {
-        slug: string;
-      };
-      frontmatter: {
-        date?: string;
-        title?: string;
-        description?: string;
-      };
-    }[];
-  };
-};
-
-const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+const BlogIndex: React.FC<PageProps<Queries.BlogIndexQuery>> = ({
+  data,
+  location,
+}) => {
+  const siteTitle = data.site?.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
 
   if (posts.length === 0) {
@@ -41,7 +23,7 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <ol style={{ listStyle: `none` }}>
         {posts.map((post) => {
-          const title = post.frontmatter.title || post.fields.slug;
+          const title = post.frontmatter?.title ?? post.fields.slug;
 
           return (
             <li key={post.fields.slug}>
@@ -61,7 +43,8 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                 <section>
                   <p
                     dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
+                      __html:
+                        post.frontmatter.description ?? post.excerpt ?? "",
                     }}
                     itemProp="description"
                   />
@@ -79,8 +62,8 @@ export default BlogIndex;
 
 export const Head = () => <Seo title="All posts" />;
 
-export const pageQuery = graphql`
-  query {
+export const query = graphql`
+  query BlogIndex {
     site {
       siteMetadata {
         title

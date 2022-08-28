@@ -5,36 +5,15 @@ import PropTypes from "prop-types";
 import Layout from "../components/layout";
 import { Link, graphql, PageProps } from "gatsby";
 
-type DataProps = {
-  allMarkdownRemark: {
-    totalCount: number;
-    edges: {
-      node: {
-        fields: {
-          slug: string;
-        };
-        frontmatter: {
-          title: string;
-        };
-      };
-    }[];
-  };
-};
-
 type Context = {
   tag: string;
 };
 
-const Tags: React.FC<PageProps<DataProps, Context>> = ({
+const Tag: React.FC<PageProps<Queries.TagTemplateQuery, Context>> = ({
   pageContext,
   data,
   location,
 }) => {
-  console.log("foo", {
-    pageContext,
-    data,
-    location,
-  });
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
   const tagHeader = `${totalCount} post${
@@ -59,10 +38,10 @@ const Tags: React.FC<PageProps<DataProps, Context>> = ({
   );
 };
 
-export default Tags;
+export default Tag;
 
 export const pageQuery = graphql`
-  query ($tag: String) {
+  query TagTemplate($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }

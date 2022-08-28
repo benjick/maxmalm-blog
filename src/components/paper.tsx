@@ -1,5 +1,10 @@
 import React from "react";
 
+interface Props {
+  name: string;
+  published?: boolean;
+}
+
 const Paper = ({ paper }: any) => {
   if (!paper) {
     return null;

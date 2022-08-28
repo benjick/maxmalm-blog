@@ -7,42 +7,15 @@ import Seo from "../components/seo";
 import Paper from "../components/paper";
 import Refs from "../components/refs";
 
-type Navigation = {
-  fields: {
-    slug: string;
-  };
-  frontmatter: {
-    title: string;
-  };
-};
-
-type DataProps = {
-  previous?: Navigation;
-  next?: Navigation;
-  site: {
-    siteMetadata?: {
-      title: string;
-    };
-  };
-  markdownRemark: {
-    id: string;
-    excerpt: string;
-    html: string;
-    frontmatter: {
-      title: string;
-      date: string;
-      description: string;
-      refs: any;
-      paper: any;
-    };
-  };
-};
-
-const BlogPostTemplate: React.FC<PageProps<DataProps>> = ({
+const BlogPostTemplate: React.FC<PageProps<Queries.BlogPostBySlugQuery>> = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
-  const siteTitle = site.siteMetadata?.title || `Title`;
+  const siteTitle = site?.siteMetadata?.title || `Title`;
+
+  if (!post || !post.html) {
+    return null;
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -59,7 +32,7 @@ const BlogPostTemplate: React.FC<PageProps<DataProps>> = ({
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <Refs refs={post.frontmatter.refs} />
+        <Refs refs={post.frontmatter.refs as string[] | null} />
         <Paper paper={post.frontmatter.paper} />
         <hr
           style={{

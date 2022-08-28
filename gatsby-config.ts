@@ -9,6 +9,7 @@ export default {
     description: `Max Malms shitty blog.`,
     siteUrl: `https://maxmalm.se/`,
   },
+  graphqlTypegen: true,
   plugins: [
     ogImagePlugin,
     `gatsby-plugin-image`,
@@ -67,8 +68,8 @@ export default {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map((node) => {
+            serialize: ({ query: { site, allMarkdownRemark } }: any) => {
+              return allMarkdownRemark.nodes.map((node: any) => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
@@ -79,23 +80,23 @@ export default {
               });
             },
             query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
-                    }
+            query Feed {
+              allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                nodes {
+                  excerpt
+                  html
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    date
                   }
                 }
               }
+            }
             `,
             output: "/rss.xml",
             title: "maxmalm.se RSS Feed",

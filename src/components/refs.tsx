@@ -1,6 +1,10 @@
 import React from "react";
 
-const Refs = ({ refs }: { refs?: string[] }) => {
+interface Props {
+  refs: string[] | null;
+}
+
+const Refs = ({ refs }: Props) => {
   if (!refs) {
     return null;
   }

@@ -5,28 +5,14 @@ import { Link, graphql, PageProps } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-type DataProps = {
-  site: {
-    siteMetadata?: {
-      title: string;
-    };
-  };
-  allMarkdownRemark: {
-    group: {
-      fieldValue: string;
-      totalCount: number;
-    }[];
-  };
-};
-
-const TagsPage: React.FC<PageProps<DataProps>> = ({
+const TagsPage: React.FC<PageProps<Queries.TagsIndexQuery>> = ({
   data: {
     allMarkdownRemark: { group },
     site,
   },
   location,
 }) => {
-  const siteTitle = site.siteMetadata?.title ?? "Title";
+  const siteTitle = site?.siteMetadata?.title ?? "Title";
   return (
     <Layout location={location} title={siteTitle}>
       <ul>
@@ -47,7 +33,7 @@ export default TagsPage;
 export const Head = () => <Seo title="Alla taggar" />;
 
 export const pageQuery = graphql`
-  query {
+  query TagsIndex {
     site {
       siteMetadata {
         title
