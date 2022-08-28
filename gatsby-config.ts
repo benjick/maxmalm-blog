@@ -98,7 +98,7 @@ export default {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "maxmalm.se RSS Feed",
           },
         ],
       },

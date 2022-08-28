@@ -35,7 +35,7 @@
     "@types/react-dom": "^18.0.6",
     "prettier": "^2.7.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://maxmalm.se",
   "keywords": [
     "gatsby"
   ],
