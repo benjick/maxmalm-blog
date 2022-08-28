@@ -11,7 +11,7 @@ Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; op
 
 > Men funkar det?
 
-Nej, det finns inga konkreta belägg för att joniserat surt vatten skulle ge dig optimal hälsa. Högst troligen handlar det helt enkelt om att personen börjar dricka mer vatten vilket har bevisade hälsoeffekter som fysisk prestationsförmåga, högre energinivåer och hjärnfunktion, motverkar huvudvärk och förstoppning, etc. Kanske man vågar säga optimal hälsa? Det är också lättare att bryta dåliga vanor när man går in i nya vanor.
+Nej, det finns inga konkreta belägg för att joniserat surt vatten skulle ge dig optimal hälsa. Högst troligen handlar det helt enkelt om att personen börjar dricka mer vatten vilket har bevisade hälsoeffekter (jämfört med uttorkning) som fysisk prestationsförmåga, högre energinivåer och hjärnfunktion, motverkar huvudvärk och förstoppning, etc. Kanske man vågar säga optimal hälsa? Det är också lättare att bryta dåliga vanor när man går in i nya vanor.
 
 Men jag skriver inte det här för att gå in på det vetenskapliga, självklart är det en scam. Företaget Aqua Nobel som säljer "alkaliskt vatten" vågar inte skriva annat än att det **kanske** är bra för magen eftersom dom inte vill bli anmälda till Konsumentverket för vilseledande reklam.
 
@@ -36,7 +36,7 @@ Så för min första maskin jag säljer får jag 1 poäng, det vill säga 200 eu
 
 Så med andra, Kangen säljer en produkt för 4575 euro (inklusive moms) varav 200 euro \* 8 poäng = 1600 euro redan är avsatta för att försvinna upp i pyramiden. 3660 (priset exklusive moms) - 1600 = 2060. 2060 \* 1.25 = 2575 euro inklusive moms (26 850 kronor) är alltså priset för en maskin utan pyramidspelsavgiften. Kanske inte en helt rättvis jämförelse då Kangen kanske hade behövt lägga mer pengar på marknadsföringskostnader om inte detta gjordes av distributörerna, men det är ändå en summa av komma ihåg till senare.
 
-Min första kontakt med Tord var den 21a januari. Mitt sista var den 23e januari, jag sa att jag skulle fundera på om jag verkligen ville ta ett lån för detta. Efter det hörde Tord av 5 gånger:
+Min första kontakt med Tord var den 21a januari. Mitt sista var den 23e januari, jag sa att jag skulle fundera på om jag verkligen ville ta ett lån för detta. Efter det hörde Tord av sig 5 gånger:
 
 * 2a februari
 * 10e februari
