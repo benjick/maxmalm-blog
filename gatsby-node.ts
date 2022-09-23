@@ -147,6 +147,7 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
     type Paper {
       name: String!
       published: Boolean
+      url: String
     }
 
     type Frontmatter {

@@ -21,7 +21,20 @@ const Paper = ({ paper }: any) => {
     );
   }
   if (paper && paper.published === true) {
-    text = <>{paper.name} valde att publicera artikeln.</>;
+    if (paper.url) {
+      text = (
+        <>
+          {paper.name} valde <strong>att</strong> publicera artikeln:{" "}
+          <a href={paper.url}>{paper.url}</a>
+        </>
+      );
+    } else {
+      text = (
+        <>
+          {paper.name} valde <strong>att</strong> publicera artikeln.
+        </>
+      );
+    }
   }
   if (!text) {
     return null;

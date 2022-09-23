@@ -109,6 +109,7 @@ export const pageQuery = graphql`
         paper {
           name
           published
+          url
         }
       }
     }
