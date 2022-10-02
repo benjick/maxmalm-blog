@@ -7,6 +7,7 @@ paper:
   name: Smålandsposten
   published: true
   url: https://www.smp.se/insandare/orattvisa-vaxjo-1e6c80df/
+  # https://www.socialisterna.org/kronika-orattvisa-vaxjo/
 refs:
   - https://www.boverket.se/contentassets/de428850a5154d4d9d65f114e55a52c2/vardeoverforingar-fran-allmannyttiga-kommunala-bostadsaktiebolag-for-rakenskapsaret-2020.pdf
 ---
