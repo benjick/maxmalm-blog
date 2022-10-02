@@ -24,16 +24,11 @@ const Paper = ({ paper }: any) => {
     if (paper.url) {
       text = (
         <>
-          {paper.name} valde <strong>att</strong> publicera artikeln:{" "}
-          <a href={paper.url}>{paper.url}</a>
+          Publicerad i {paper.name}: <a href={paper.url}>{paper.url}</a>.
         </>
       );
     } else {
-      text = (
-        <>
-          {paper.name} valde <strong>att</strong> publicera artikeln.
-        </>
-      );
+      text = <>Publicerad i {paper.name}.</>;
     }
   }
   if (!text) {
