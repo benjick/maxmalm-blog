@@ -1,11 +1,11 @@
 ---
-title: 'Vattenbluffen, nu även i Sverige'
-date: '2022-08-27'
+title: "Vattenbluffen, nu även i Sverige"
+date: "2022-08-27"
 description: Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt.
-tags: ['kapitalism']
+tags: ["kapitalism"]
 ---
 
-### 🚨 Jag orkade aldrig renskriva den här texten. Om du läser den: förlåt.
+> Något att tillägga? Maila mig på vattenbluffen@malm.mozmail.com
 
 Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt. Allt du behöver göra? Köpa, och själv börja kränga på andra, en maskin som kopplas på din vattenkran som gör vattnet alkaliskt och "omstrukturerat". En "distributör" jämför det med att "köpa Ferrari för fast för din hälsa" på sin Facebooksida.
 
@@ -38,11 +38,11 @@ Så med andra, Kangen säljer en produkt för 4575 euro (inklusive moms) varav 2
 
 Min första kontakt med Tord var den 21a januari. Mitt sista var den 23e januari, jag sa att jag skulle fundera på om jag verkligen ville ta ett lån för detta. Efter det hörde Tord av sig 5 gånger:
 
-* 2a februari
-* 10e februari
-* 12e februari
-* 6e mars
-* 10e april
+- 2a februari
+- 10e februari
+- 12e februari
+- 6e mars
+- 10e april
 
 ## Nätverken
 
