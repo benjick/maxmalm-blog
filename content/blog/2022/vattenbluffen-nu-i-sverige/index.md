@@ -5,6 +5,8 @@ description: Kangenvatten, från företaget Enagic, lovar genom sina distributö
 tags: ["kapitalism"]
 ---
 
+**Uppdatering 2022-12-11:** _[Claudia hör av sig](#uppdatering-2022-12-11)_
+
 > Något att tillägga? Maila mig på vattenbluffen@malm.mozmail.com
 
 Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt. Allt du behöver göra? Köpa, och själv börja kränga på andra, en maskin som kopplas på din vattenkran som gör vattnet alkaliskt och "omstrukturerat". En "distributör" jämför det med att "köpa Ferrari för fast för din hälsa" på sin Facebooksida.
@@ -77,3 +79,23 @@ Troligen tar även Stefano ett kraftigt överpris för sina maskiner då AliExpr
 ## Slutsats
 
 Den som försöker sälja på dig en vattenmaskin, speciell via pyramidspel som Enagic, har som vi sett ovan otroligt starka ekonomiska incitament att göra det och i ryggen har dom andra med minsta lika stora ekonominska incitament som peppar, pressar och manipulerar dom att sälja till dig. Det är väldigt svårt att faktagranska påståenden som kommer från Enagics distributörer då man ofta hamnar på andra distributörers webbplatser eftersom dom bara kopierat av varandra, kanske av sin egna mentor. Vill du ha en lyxig apparat som får dig att dricka mer vatten så verkar Aarke Carbonator 3 vara en lämplig maskin, till cirka 5% av priset för en Kangenmaskin. (ej sponsrad)
+
+<div id="uppdatering-2022-12-11"></div>
+
+### Uppdatering 2022-12-11
+
+Först när jag skrev den här artikeln hoppades jag bara att en enda person som höll på att bli inlurad i detta pyramidspelet som är Kangen skulle hitta hit och komma på andra tankar. Idag är det 300 personer som klickat sig hit, främst via Google och allra främst via sökordet "kangenvatten bluff". Och eftersom Claudia (som omnämns i artikeln ovan) hörde av sig igår och ville "tacka" mig för att jag intresserar mig vad "hon gör" kan jag bara anta att min text har gjort lite nytta.
+
+![](messenger.jpg)
+
+Det här är vad hon skrev. Hon skickade även 2 ljudklipp som jag valde att inte lyssna på. Jag har länge anat att Claudia lider av [NPD](https://sv.wikipedia.org/wiki/Narcissistisk_personlighetsst%C3%B6rning) eller något liknande och detta meddelandet känns som en bekräftelse på det (jag är såklart ingen läkare och kan diagnostisera någon). En normal person som inte ser alla omkring sig som hinder som måste manipuleras hade inte skrivit såhär till någon som pekat ut den som konspirationsteoretiker. Detta är beyond "kill them with kindness".
+
+Jag får i meddelandet också ett erbjudande om att ta del av "hälsoutlåtanden" från personer som påverkats positivt "av vattnet". Notera ordvalet, **hälsoutlåtande**. Vad betyder det ens? Det verkar inte vara en korrekt term utan något som låter snarlikt **läkarutlåtande om hälsotillstånd** vilket är något en legitimerad läkare skriver om en patient. Men det är inte något sånt utlåtande Claudia erbjuder mig här, det är i själva verket **anekdoter** från andra som blivit inlurade i denna vattenbluff. En anekdot är inte värt något som bevis för att detta Kangenvatten skulle ge dig några som helst superkrafter. Det finns en anledning att det inte finns några studier som styrker Claudia med fleras påståenden om vatten - det är en bluff. **En stor fet bluff.**
+
+Det enda jag svarade på ovanstående meddelandet var "nej tack, kontakta inte mig igen" och sen blockerade jag Claudia. Jag ville inte fastna i någon oändlig diskussion med någon som bara har för avsikt att manipulera mig. Detta kan en person som Claudia inte godta utan idag skrev hon ett öppet brev till mig på sin Facebooksida där hon skriver att hon **"förlåter mig"** (som att jag bara var en vilsen själ som inte visste bättre 😢 - detta kallas för negging och används ofta för att göra offret mer mottagligt för den kommande love-bombingen, t ex "tack för allt du gör djuren" vilket nämndes många gånger i inlägget) och bortförklarar allt jag tar upp här i artikeln.
+
+Detta är också typiskt NPD, att försöka styra folks uppfattning om eventuella dissidenter innan dom ens hinner ta del av deras budskap. Man grundar potentiella kultmedlemmar med meningar som _"det är inte så farligt att vi tar 20 000 kr överpris, tänk hur många procent Apple tar i vinst på en iPhone!"_ för att dom inte ska ens ska tänka 2 gånger på hur mycket Claudia ämnar att tjäna på dom. Och tänker man inte på de otroligt stora vinsterna Claudia gör är det svårare att förstå hennes incitament att verkligen sälja dessa maskinerna och dessutom rekrytera andra som i sin tur säljer och rekryterar vidare.
+
+Och ett förtydligande angående vinsten; det jag tar upp i min text här gällande "överpris" gör ingen som helst analys av _vad Enagic själva gör för någon vinst på produkten_ utan bara vad **återförsäljarna** tjänar, men Claudia har inga problem att förbise den delen för att kunna påstå att maskinerna "bara" säljs med ett 100%-igt påslag. En narcissist i damage control-läge har inte tid att presentera sakligt, det handlar bara om att kväva motståndet så snabbt som det går för att återställa den falska fasaden.
+
+Har du läst såhär långt tackar jag dig för din tid. Jag vill också rekommendera dig att läsa på om **narcissistisk personlighetsstörning**, speciellt om vilka olika tricks dom använder för att manipulera personer i sin omgivning. Har man en gång läst på om hur dom opererar är det såklart mycket lättare att upptäcka innan man faller dit.
