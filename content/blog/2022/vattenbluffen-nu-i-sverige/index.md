@@ -7,6 +7,8 @@ tags: ["kapitalism"]
 
 **Uppdatering 2022-12-11:** _[Claudia hör av sig](#uppdatering-2022-12-11)_
 
+**Uppdatering 2022-12-14:** _[Förtal](#uppdatering-2022-12-14)_
+
 > Något att tillägga? Maila mig på vattenbluffen@malm.mozmail.com
 
 Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt. Allt du behöver göra? Köpa, och själv börja kränga på andra, en maskin som kopplas på din vattenkran som gör vattnet alkaliskt och "omstrukturerat". En "distributör" jämför det med att "köpa Ferrari för fast för din hälsa" på sin Facebooksida.
@@ -99,3 +101,9 @@ Detta är också typiskt manipulativa människor, att försöka styra folks uppf
 Och ett förtydligande angående vinsten; det jag tar upp i min text här gällande "överpris" gör ingen som helst analys av _vad Enagic själva gör för någon vinst på produkten_ utan bara vad **återförsäljarna** tjänar, men Claudia har inga problem att förbise den delen för att kunna påstå att maskinerna "bara" säljs med ett 100%-igt påslag. En narcissist i damage control-läge har inte tid att presentera sakligt, det handlar bara om att kväva motståndet så snabbt som det går för att återställa den falska fasaden.
 
 Har du läst såhär långt tackar jag dig för din tid. Jag vill också rekommendera dig att läsa på om **narcissistisk personlighetsstörning**, speciellt om vilka olika tricks dom använder för att manipulera personer i sin omgivning.
+
+<div id="uppdatering-2022-12-14"></div>
+
+### Uppdatering 2022-12-14
+
+Idag blev jag meddelad att █████ kommer att anmäla för mig förtal. Kan gissa att detta beror på att de två första försöken inte gav något resultat i att få mig att publicera några så kallade "hälsoutlåtanden" i artikeln. Vilken helomvändning från att █████ tackar mig för att lyft upp hens arbete till nu detta.
