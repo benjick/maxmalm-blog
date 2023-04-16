@@ -154,6 +154,7 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
       title: String!
       description: String
       date: Date! @dateformat
+      lang: String
       tags: [String!]
       refs: [String!]
       paper: Paper

@@ -1,6 +1,7 @@
 ---
 title: "How Microsoft is ruining my life"
 date: "2014-07-01"
+lang: "en"
 tags: [life]
 ---
 

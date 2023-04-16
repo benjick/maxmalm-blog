@@ -1,6 +1,7 @@
 ---
 title: "Ionic Framework - with vagrant"
 date: "2014-09-15"
+lang: "en"
 tags: [dev, ionic, vagrant]
 ---
 

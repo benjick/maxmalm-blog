@@ -1,6 +1,7 @@
 ---
 title: "Jakten på den perfekta TVPn"
 date: "2023-01-12"
+lang: "sv"
 tags: ["mat", "veganism"]
 ---
 

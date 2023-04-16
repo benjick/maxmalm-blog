@@ -1,6 +1,7 @@
 ---
 title: "How to really use s3"
 date: "2015-06-02"
+lang: "en"
 tags: [dev, s3]
 ---
 

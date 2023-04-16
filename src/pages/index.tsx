@@ -4,6 +4,25 @@ import { Link, graphql, PageProps } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
+function Flag({ lang }: { lang?: string }) {
+  switch (lang) {
+    case "en":
+      return (
+        <span role="img" aria-label="English" style={{ marginRight: 5 }}>
+          🇬🇧
+        </span>
+      );
+    case "sv":
+      return (
+        <span role="img" aria-label="Swedish" style={{ marginRight: 5 }}>
+          🇸🇪
+        </span>
+      );
+    default:
+      return null;
+  }
+}
+
 const BlogIndex: React.FC<PageProps<Queries.BlogIndexQuery>> = ({
   data,
   location,
@@ -38,7 +57,10 @@ const BlogIndex: React.FC<PageProps<Queries.BlogIndexQuery>> = ({
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small>
+                    <Flag lang={post.frontmatter.lang} />
+                    {post.frontmatter.date}
+                  </small>
                 </header>
                 <section>
                   <p
@@ -79,6 +101,7 @@ export const query = graphql`
           date(formatString: "DD MMMM, YYYY", locale: "sv")
           title
           description
+          lang
         }
       }
     }

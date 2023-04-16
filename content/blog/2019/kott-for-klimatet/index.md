@@ -1,6 +1,7 @@
 ---
 title: "Replik: Kött för klimatet"
 date: "2019-11-11"
+lang: "sv"
 description: "Svar på Ester Hedins grundlösa påståenden att svenskt kött skulle vara klimatsmart"
 tags: ["klimatet", "djurrätt"]
 refs:

@@ -1,6 +1,7 @@
 ---
 title: "My workout app vision"
 date: "2015-01-11"
+lang: "en"
 tags: [dev, app, featured]
 ---
 

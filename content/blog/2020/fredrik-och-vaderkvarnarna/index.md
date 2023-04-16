@@ -1,6 +1,7 @@
 ---
 title: "Fredrik och väderkvarnarna"
 date: "2020-06-29"
+lang: "sv"
 description: "Kort text om när Fredrik Haage hjälpte till att trolla brunhögern"
 tags: ["haage", "extremism"]
 refs:

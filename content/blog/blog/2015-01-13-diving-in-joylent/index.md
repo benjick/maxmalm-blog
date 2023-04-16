@@ -1,6 +1,7 @@
 ---
 title: "Diving in with Joylent"
 date: "2015-01-13"
+lang: "en"
 tags: [life, joylent]
 ---
 

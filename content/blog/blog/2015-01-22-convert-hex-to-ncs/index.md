@@ -1,6 +1,7 @@
 ---
 title: "Convert HEX to NCS"
 date: "2015-01-22"
+lang: "en"
 tags: [project, featured, dev, mycode]
 image: bg.jpg
 ---

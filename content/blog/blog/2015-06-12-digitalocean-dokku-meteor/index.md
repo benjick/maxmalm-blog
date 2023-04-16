@@ -1,6 +1,7 @@
 ---
 title: "DigitalOcean + Dokku + Meteor"
 date: "2015-06-12"
+lang: "en"
 tags: [dev, meteor, dokku]
 ---
 

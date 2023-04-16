@@ -1,6 +1,7 @@
 ---
 title: "Utanför dödsfabriken"
 date: "2020-06-18"
+lang: "sv"
 description: "Kort text jag skrev efter Linköping Animals Saves 3-dagarsvigil utanför HKScan"
 tags: ["djurrätt"]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Let's Encrypt for Nginx on Ubuntu"
 date: "2016-08-12"
+lang: "en"
 tags: [sysadmin]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Akuten i Växjö under enorm press"
 date: "2022-10-05"
+lang: "sv"
 tags: ["politik"]
 description: "Förra veckan hände något som jag som Växjöbo aldrig hade kunnat tänka mig. Akutkliniken var så pass ansträngd att man fick hänvisa lågprioriterade patienter och ambulanstransporter till Ljungby lasarett. Man fick gå upp i lokalt stabsläge, vilket bara har skett vid enstaka tillfällen innan."
 paper:

@@ -2,6 +2,7 @@
 title: "Vattenbluffen, nu även i Sverige"
 date: "2022-08-27"
 description: Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt.
+lang: "sv"
 tags: ["kapitalism"]
 ---
 
@@ -11,7 +12,7 @@ tags: ["kapitalism"]
 
 > Något att tillägga? Maila mig på vattenbluffen@malm.mozmail.com
 
-Kangenvatten, från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt. Allt du behöver göra? Köpa, och själv börja kränga på andra, en maskin som kopplas på din vattenkran som gör vattnet alkaliskt och "omstrukturerat". En "distributör" jämför det med att "köpa Ferrari för fast för din hälsa" på sin Facebooksida.
+Kangenvatten - även kallat "levande vatten", från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt. Allt du behöver göra? Köpa, och själv börja kränga på andra, en maskin som kopplas på din vattenkran som gör vattnet alkaliskt och "omstrukturerat". En "distributör" jämför det med att "köpa Ferrari för fast för din hälsa" på sin Facebooksida.
 
 > Men funkar det?
 

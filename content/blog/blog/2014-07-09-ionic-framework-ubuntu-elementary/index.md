@@ -1,6 +1,7 @@
 ---
 title: "Ionic Framework quick setup (Ubuntu 12.04, Elementary Luna)"
 date: "2014-07-09"
+lang: "en"
 tags: [dev, ionic, vagrant]
 ---
 

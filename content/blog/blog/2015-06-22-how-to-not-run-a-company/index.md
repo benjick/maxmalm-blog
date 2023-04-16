@@ -1,6 +1,7 @@
 ---
 title: "How to not run a company"
 date: "2015-06-22"
+lang: "en"
 tags: [sysadmin]
 ---
 

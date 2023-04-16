@@ -1,6 +1,7 @@
 ---
 title: "Den bortkvoterade mannen"
 date: "2022-09-30"
+lang: "sv"
 tags: ["identitetspolitik"]
 description: "Den moderna konservativa mannen verkar ha ett behov av att se sig själv som ett offer i samhället. Jag antar att detta är för att det är lättare att skylla på alla andra än att se på sig själv med ett kritiskt öga. Då blir det också självklart att blunda för helhetsbilden."
 refs:

@@ -1,6 +1,7 @@
 ---
 title: "Installing WSO2 Enterprise Mobility Manager 1.1.0"
 date: "2014-06-17"
+lang: "en"
 tags: [wso2, linux, sysadmin]
 ---
 

@@ -2,6 +2,7 @@
 title: "Orättvisa Växjö"
 date: "2022-08-28"
 description: "En omvänd Robin Hodd i moderatledda Växjö där hyrestagarna straffskattas med över 100 miljoner om året."
+lang: "sv"
 tags: ["kapitalism", "växjö"]
 paper:
   name: Smålandsposten

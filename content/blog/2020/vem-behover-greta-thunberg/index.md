@@ -1,6 +1,7 @@
 ---
 title: "Replik: Vem behöver Greta Thunberg?"
 date: "2020-02-09"
+lang: "sv"
 description: "Svar på John Curovacs tankar om hur vi räddar oss från kapitalismen genom kapitalismen"
 tags: ["klimatet", "kapitalism"]
 paper:

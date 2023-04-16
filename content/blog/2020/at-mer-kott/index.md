@@ -1,11 +1,12 @@
 ---
 title: "Replik: Ät mer kött"
 date: "2020-03-20"
+lang: "sv"
 description: "Svar på Fredrik Haages trams om att vi ska äta mer kött"
 tags: ["djurrätt", "klimatet", "haage"]
 refs:
   - http://www.vethos.se/artiklar/oppna-landskap-och-biologisk-mangfald/
-  - https://etidning.smp.se/669/eSMP/289027/2020-03-16/12604773/At-mer-kott 
+  - https://etidning.smp.se/669/eSMP/289027/2020-03-16/12604773/At-mer-kott
 paper:
   name: Smålandsposten
   published: false

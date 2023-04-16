@@ -1,6 +1,7 @@
 ---
 title: "Replik: Låter det inte misstänkt mycket som miljöpartistisk politik? "
 date: "2019-11-11"
+lang: "sv"
 description: "Svar på Emma Jaensons felaktiga antaganden gällande klimatkrisen och djurhållning"
 tags: ["klimatet", "djurrätt"]
 refs:

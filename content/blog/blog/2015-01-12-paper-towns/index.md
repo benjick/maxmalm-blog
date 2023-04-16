@@ -1,6 +1,7 @@
 ---
 title: "Paper Towns"
 date: "2015-01-12"
+lang: "en"
 tags: [books, life]
 ---
 
