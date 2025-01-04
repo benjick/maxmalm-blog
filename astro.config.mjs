@@ -5,11 +5,8 @@ import sitemap from "@astrojs/sitemap";
 
 import tailwind from "@astrojs/tailwind";
 
-import vercel from "@astrojs/vercel";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://maxmalm.se",
   integrations: [mdx(), sitemap(), tailwind()],
-  adapter: vercel(),
 });
