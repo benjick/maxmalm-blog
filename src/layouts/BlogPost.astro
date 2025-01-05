@@ -14,11 +14,6 @@ const { title, description, date, refs, paper, lang } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
     <style>
-      main {
-        width: calc(100% - 2em);
-        max-width: 100%;
-        margin: 0;
-      }
       .hero-image {
         width: 100%;
       }
@@ -29,10 +24,8 @@ const { title, description, date, refs, paper, lang } = Astro.props;
         box-shadow: var(--box-shadow);
       }
       .prose {
-        width: 720px;
-        max-width: calc(100% - 2em);
+        max-width: 720px;
         margin: auto;
-        padding: 1em;
         color: rgb(var(--gray-dark));
       }
       .title {
@@ -56,14 +49,14 @@ const { title, description, date, refs, paper, lang } = Astro.props;
 
   <body>
     <Header />
-    <main>
+    <main class="w-full px-2 lg:px-4">
       <article>
         <div class="prose">
           <div class="title">
             <div class="date">
               <FormattedDate date={date} />
             </div>
-            <h1>{title}</h1>
+            <h1 class="text-3xl md:text-5xl">{title}</h1>
             <hr />
           </div>
           <slot />
