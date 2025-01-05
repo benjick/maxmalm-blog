@@ -31,14 +31,14 @@ const posts = (await getCollection("blog"))
       <hr class="my-8" />
       <div class="container mx-auto">
         <p class="text-sm uppercase">Några av mina texter</p>
-        <ul>
+        <ul class="space-y-8">
           {
             posts.map((post) => (
               <li>
                 <a href={`/${post.id}/`}>
                   <h5 class="title">{post.data.title}</h5>
                   <p class="text-sm text-gray-500">{post.data.description}</p>
-                  <p class="date">
+                  <p class="date text-sm">
                     <FormattedDate date={post.data.date} />
                   </p>
                 </a>

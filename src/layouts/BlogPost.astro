@@ -14,19 +14,10 @@ const { title, description, date, refs, paper, lang } = Astro.props;
   <head>
     <BaseHead title={title} description={description} />
     <style>
-      .hero-image {
-        width: 100%;
-      }
-      .hero-image img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 12px;
-        box-shadow: var(--box-shadow);
-      }
       .prose {
         max-width: 720px;
         margin: auto;
-        color: rgb(var(--gray-dark));
+        color: var(--gray-dark);
       }
       .title {
         margin-bottom: 1em;
@@ -39,7 +30,7 @@ const { title, description, date, refs, paper, lang } = Astro.props;
       }
       .date {
         margin-bottom: 0.5em;
-        color: rgb(var(--gray));
+        color: var(--gray);
       }
       .last-updated-on {
         font-style: italic;
