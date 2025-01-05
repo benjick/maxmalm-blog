@@ -62,7 +62,7 @@ När jag i kommenterna i ovan nämnda Facebookinteraktion påstod att Claudia, d
 
 Något mer Claudia nämnde i sin långa kommentar var att hon "lyssnar på läkare, vetenskapskvinnor och män". Samtidigt visar en snabb titt på Claudias Facebookprofil att hon är en inbiten anti-vaxxer, hon sprider konspirationsteorin om Nürnberg 2.0. För dig som inte är så insatt i anti-vaxxers lore så handlar denna konspirationsteori om att världsledarna ska dras inför rätta i domstolen i Nürnberg, där 24 militära och politiska ledare från det besegrade Nazityskland ställdes inför rätta. Logiken är att genom vaccinet mot Covid-19 används människor som försökskaniner vilket klassas som brott mot mänskligheten. Den tyske advokaten Reiner Füllmich som är profilen bakom konspirationsteorin har fått in miljoner kronor i donationer av privatpersoner som han lyckats lura. Även Tord delar vaccinkritiska kommentarer på sin Facebookprofil, om än inte lika grova.
 
-![](./claudia.png)
+![Skärmdump från Claudias Facebook där hon sprider konspirationsteorier](./claudia.png)
 
 Både om man tror att Claudia och Tord är "believers" (som verkligen tror på vad dom säljer) eller "grifters" (någon som utnyttjar andras okunskap för att tjäna pengar) så känns det ganska naturligt att personer som säljer dessa vattenmaskiner även simmar i konspirationsteorivatten. Att få någon som tror att "dom använder vaccinet för förslava oss" till att också tro att alkaliskt vatten gör dig närmare odödlig kräver troligen inte någon större ansträngning.
 
@@ -72,7 +72,7 @@ Låt oss ponera att detta maskiner fyller ett riktigt syfte. Varför Enagic? Ena
 
 I samma bloggpost berättar man också att Enagic mottagit "the International Earth Environment University (IEEU) Award". IEEU var väldigt svårgooglat men till slut hittade jag ytterliggare en japansk hemsida som påstår att IEEU grundades av nobelpristagaren Linus Carl Pauling, något som dessvärre inte reflekteras på hans Wikipedia-sida. I samma stycke nämns också "Postdoctoral Institute of Spirituality Science" men en sökning på det returnerar inga andra sökresultat hos google. Som bevis på priset finns den här bilden:
 
-![](./award.jpg)
+![Bild på det påstådda priset som Enagic fått](./award.jpg)
 
 Men på denna mikroskopiska bild går det knappast att utläsa något. Jag kunde heller inte hitta något med googles omvända bildsök. Man kan också tycka att dessa erkända organisationer skulle finnas med på Wikipedia, men så är inte fallet.
 
@@ -90,7 +90,7 @@ Den som försöker sälja på dig en vattenmaskin, speciell via pyramidspel som 
 
 Först när jag skrev den här artikeln hoppades jag bara att en enda person som höll på att bli inlurad i detta pyramidspelet som är Kangen skulle hitta hit och komma på andra tankar. Idag är det 300 personer som klickat sig hit, främst via Google och allra främst via sökordet "kangenvatten bluff". Och eftersom Claudia (som omnämns i artikeln ovan) hörde av sig igår och ville "tacka" mig för att jag intresserar mig vad "hon gör" kan jag bara anta att min text har gjort lite nytta.
 
-![](messenger.jpg)
+![Skärmdump från Messenger där Claudia skriver att hon förlåter mig](./messenger.jpg)
 
 Det här är vad hon skrev. Hon skickade även 2 ljudklipp som jag valde att inte lyssna på.
 
