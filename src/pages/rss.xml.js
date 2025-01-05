@@ -8,9 +8,12 @@ export async function GET(context) {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     site: context.site,
-    items: posts.map((post) => ({
-      ...post.data,
-      link: `/${post.id}/`,
-    })),
+    items: posts
+      .toSorted((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+      .map((post) => ({
+        ...post.data,
+        pubDate: post.data.date,
+        link: `/${post.id}/`,
+      })),
   });
 }
