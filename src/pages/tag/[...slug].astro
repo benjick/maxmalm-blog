@@ -1,0 +1,27 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Tag from "../../layouts/Tag.astro";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  const tags = posts.map((post) => post.data.tags).flat();
+  const uniqueTags = [...new Set(tags)];
+  return uniqueTags.map((tag) => ({
+    params: { slug: tag },
+    props: {
+      posts: posts.filter((post) => post.data.tags.includes(tag)),
+      tag,
+    },
+  }));
+}
+
+type Props = {
+  posts: CollectionEntry<"blog">[];
+  tag: string;
+};
+
+const { posts, tag } = Astro.props;
+---
+
+<Tag posts={posts} tag={tag} />
