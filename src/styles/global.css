@@ -111,6 +111,7 @@ blockquote {
 hr {
   border: none;
   border-top: 1px solid var(--gray-light);
+  @apply my-8;
 }
 .prose ul {
   @apply list-disc list-inside mb-4;
