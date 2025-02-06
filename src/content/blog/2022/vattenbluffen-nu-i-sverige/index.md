@@ -11,6 +11,8 @@ linkTo: true
 
 **Uppdatering 2022-12-14:** _[Förtal](#uppdatering-2022-12-14)_
 
+**Uppdatering 2025-02-06:** _[Borta från Google](#uppdatering-2025-02-06)_
+
 > Något att tillägga? Maila mig på vattenbluffen@malm.mozmail.com
 
 Kangenvatten - även kallat "levande vatten", från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt. Allt du behöver göra? Köpa, och själv börja kränga på andra, en maskin som kopplas på din vattenkran som gör vattnet alkaliskt och "omstrukturerat". En "distributör" jämför det med att "köpa Ferrari för fast för din hälsa" på sin Facebooksida.
@@ -109,3 +111,9 @@ Har du läst såhär långt tackar jag dig för din tid. Jag vill också rekomme
 ### Uppdatering 2022-12-14
 
 Idag blev jag meddelad att █████ kommer att anmäla för mig förtal. Kan gissa att detta beror på att de två första försöken inte gav något resultat i att få mig att publicera några så kallade "hälsoutlåtanden" i artikeln. Vilken helomvändning från att █████ tackar mig för att lyft upp hens arbete till nu detta.
+
+<div id="uppdatering-2025-02-06"></div>
+
+# Uppdatering 2025-02-06
+
+Över åren sedan jag publicerade den här artikln har jag fått nästan 2000 träffar via Google där folk sökt på fraser som "kangenvatten bluff" och "alkaliskt vatten bluff". Idag kan man inte ens söka fram artikeln med dess exakta titel. Varför?
