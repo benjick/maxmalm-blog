@@ -114,6 +114,6 @@ Idag blev jag meddelad att █████ kommer att anmäla för mig förtal. 
 
 <div id="uppdatering-2025-02-06"></div>
 
-# Uppdatering 2025-02-06
+### Uppdatering 2025-02-06
 
 Över åren sedan jag publicerade den här artikln har jag fått nästan 2000 träffar via Google där folk sökt på fraser som "kangenvatten bluff" och "alkaliskt vatten bluff". Idag kan man inte ens söka fram artikeln med dess exakta titel. Varför?
