@@ -40,3 +40,9 @@ Det måste vara ett effektivt sätt att bekämpa korruption, tar man bort staten
 Micke avslutar artikeln med att vi borde upphäva skolplikten (vilken resa). Mer makt åt föräldrarna! Detta är en väldigt rolig punkt Micke får med, speciellt om vi kollar lite längre upp i tråden när han gnäller om transvården. Då pratar han om "ideologi före människoliv" (som att transpersoner inte också är människor och förtjänar en rättvis vård), vilket jag vill påstå att han själv gör när det kommer till skolplikten. Forskning visar att barn som inte får strukturerad pedagogisk stimulans under förskoleåren, vare sig genom förskola eller hemma, kan hamna efter i språkkunskaperna resten av livet. För att sätta människoliv framför ideologi borde man alltså sänka åldern för skolplikt, inte ta bort den helt.
 
 När Företagande.se, som säger sig värna demokrati och kämpa mot korruption, välkomnar idéer om att ersätta demokratiska institutioner med företagsstyrda "Network States" bör varningsklockorna ringa. Det som presenteras som "frihet" och "folkets makt" handlar i själva verket om att flytta den demokratiska makten till en handfull ultrarika. När samma personer som vill skrota skolplikten och nedmontera Public Service talar om "människoliv före ideologi" blir det tydligt att det inte handlar om frihet för alla utan frihet för dom som har. En ny era av aristokrati.
+
+### Uppdatering 2025-02-07
+
+Jag bad Patrik förklara syftet med deras tankar på "nya byar och länder" på vilket jag fick detta svaret:
+
+> Syftet är att alla människor borde få bo var de vill och leva sina liv utan påverkan från stat. Byarna behöver ändå bra mat, energi, vatten och kring det kan alla samarbeta och dela kunskap - och handla - frivilligt.
