@@ -13,6 +13,8 @@ linkTo: true
 
 **Uppdatering 2025-02-06:** _[Borta från Google](#uppdatering-2025-02-06)_
 
+**Uppdatering 2025-09-08:** _[ETC skriver om Freedom By You](#uppdatering-2025-09-08)_
+
 > Något att tillägga? Maila mig på vattenbluffen@malm.mozmail.com
 
 Kangenvatten - även kallat "levande vatten", från företaget Enagic, lovar genom sina distributörer högt; optimal hälsa - fysiskt, mentalt och finansiellt. Allt du behöver göra? Köpa, och själv börja kränga på andra, en maskin som kopplas på din vattenkran som gör vattnet alkaliskt och "omstrukturerat". En "distributör" jämför det med att "köpa Ferrari för fast för din hälsa" på sin Facebooksida.
@@ -117,3 +119,18 @@ Idag blev jag meddelad att █████ kommer att anmäla för mig förtal. 
 ### Uppdatering 2025-02-06
 
 Över åren sedan jag publicerade den här artikln har jag fått nästan 2000 träffar via Google där folk sökt på fraser som "kangenvatten bluff" och "alkaliskt vatten bluff". Idag kan man inte ens söka fram artikeln med dess exakta titel. Varför?
+
+<div id="uppdatering-2025-09-08"></div>
+
+### Uppdatering 2025-08-98
+
+ETC har gjort ett gräv om "Freedom By You" (https://www.etc.se/story/undercover-i-pyramidspelet-som-lockar-300-svenska-kvinnor) som är ett nätverk likt Claudias vars mål också är att sälja vattenmaskiner, men dom har tagit en liten annan approach än första vågennätverken. När man besöker deras hemsidor så handlar det inte om vattnet i sig, utan fokusen ligger helt på affärsmöjligheten. Maskinerna nämns inte ens på deras hemsidor eller i deras marknadsmaterial.
+
+Jag har blivit kontaktad av en hel del personer gällande "Freedom by X" från personer vars nära och kära trillat dit, min plan var att skriva en ny text om Freedom By You för att även det skulle dyka upp när folk Googlar, men nu när ETC har gjort ett så bra jobb tänkte jag bara skriva ner dom namnen jag känner till. Här är kända säljare inom Freedom for you-nätverket:
+
+- Freedom by you
+- Freedom by Sandra (Freedombysandra AB / Sandra Magnbrant)
+- Lina Vesterlund AB
+- Freedom by Birgitta
+- Freedom by Evelina
+- Our fairytale life / adifferentlifebyme
