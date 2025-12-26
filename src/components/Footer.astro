@@ -2,12 +2,10 @@
 const today = new Date();
 ---
 
-<footer>Max Malm</footer>
-<style>
-  footer {
-    padding: 2em 1em 6em 1em;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    color: var(--gray);
-    text-align: center;
-  }
-</style>
+<footer
+  class="py-12 text-center text-sm text-gray-500 border-t border-gray-100 mt-20"
+>
+  <div class="max-w-4xl mx-auto px-4">
+    <p>&copy; {today.getFullYear()} Max Malm. All rights reserved.</p>
+  </div>
+</footer>

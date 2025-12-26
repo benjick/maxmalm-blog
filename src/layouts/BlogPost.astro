@@ -13,77 +13,97 @@ const { title, description, date, refs, paper, lang } = Astro.props;
 <html lang={lang}>
   <head>
     <BaseHead title={`${title} - maxmalm.se`} description={description} />
-    <style>
-      .prose {
-        max-width: 720px;
-        margin: auto;
-        color: var(--gray-dark);
-      }
-      .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
-        line-height: 1;
-      }
-      .title h1 {
-        margin: 0 0 0.5em 0;
-      }
-      .date {
-        margin-bottom: 0.5em;
-        color: var(--gray);
-      }
-      .last-updated-on {
-        font-style: italic;
-      }
-    </style>
   </head>
 
-  <body>
+  <body
+    class="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col"
+  >
     <Header />
-    <main class="w-full px-2 lg:px-4">
-      <article>
-        <div class="prose">
-          <div class="title">
-            <div class="date">
-              <FormattedDate date={date} />
-            </div>
-            <h1 class="text-3xl md:text-5xl">{title}</h1>
-            <hr />
+    <main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <article
+        class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100"
+      >
+        <header class="mb-10 text-center">
+          <div
+            class="mb-4 text-gray-500 text-sm font-medium uppercase tracking-wider"
+          >
+            <FormattedDate date={date} />
           </div>
+          <h1
+            class="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight max-w-3xl mx-auto"
+          >
+            {title}
+          </h1>
+          <hr class="w-16 h-1 bg-blue-500 mx-auto rounded-full border-0" />
+        </header>
+
+        <div
+          class="prose prose-lg prose-slate mx-auto max-w-none
+          prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900
+          prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+          prose-img:rounded-xl prose-img:shadow-lg
+          prose-code:text-blue-600 prose-code:bg-blue-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:font-medium
+          prose-pre:bg-gray-900 prose-pre:shadow-lg"
+        >
           <slot />
         </div>
+
+        {
+          paper && (
+            <div class="mt-12 pt-8 border-t border-gray-100 text-sm text-gray-600 bg-gray-50 p-6 rounded-xl">
+              {paper.published === true ? (
+                paper.url ? (
+                  <>
+                    Publicerad i {paper.name}:{" "}
+                    <a
+                      href={paper.url}
+                      target="_blank"
+                      class="text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                      {paper.url}
+                    </a>
+                    .
+                  </>
+                ) : (
+                  <>Publicerad i {paper.name}.</>
+                )
+              ) : paper.published === false ? (
+                <>
+                  {paper.name} valde att{" "}
+                  <strong class="font-semibold text-red-600">inte</strong>{" "}
+                  publicera artikeln.
+                </>
+              ) : (
+                <>Skickat till {paper.name}.</>
+              )}
+            </div>
+          )
+        }
+
+        {
+          refs && (
+            <div class="mt-8 pt-8 border-t border-gray-100">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-gray-900 mb-4">
+                Referenser
+              </h4>
+              <ul class="space-y-2 text-sm text-gray-600">
+                {refs.map((ref) => (
+                  <li class="flex items-start gap-2">
+                    <span class="text-gray-400 select-none">•</span>
+                    <a
+                      href={ref}
+                      target="_blank"
+                      class="text-blue-600 hover:text-blue-800 break-all"
+                    >
+                      {ref}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
       </article>
-      {paper && (
-        <hr class="my-4" />
-        <div class="prose">
-          {paper.published === true ? (
-            paper.url ? (
-              <>Publicerad i {paper.name}: <a href={paper.url} target="_blank">{paper.url}</a>.</>
-            ) : (
-              <>Publicerad i {paper.name}.</>
-            )
-          ) : paper.published === false ? (
-            <>{paper.name} valde att <strong>inte</strong> publicera artikeln.</>
-          ) : (
-            <>Skickat till {paper.name}.</>
-          )}
-        </div>
-      )}
-      {
-        refs && (
-          <hr class="my-4" />
-          <div class="prose">
-            <h4 class="text-lg uppercase">Referenser</h4>
-            <ul class="list-disc space-y-2">
-              {refs.map((ref) => (
-                <li class="text-sm">
-                  <a href={ref} target="_blank">{ref}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )
-      }
     </main>
     <Footer />
   </body>

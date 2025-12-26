@@ -16,37 +16,64 @@ const posts = (await getCollection("blog"))
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body
+    class="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col"
+  >
     <Header />
-    <main>
-      <h1>🤠 Hej, jag heter Max!</h1>
-      <p>
-        Jag är en superbra full-stackutvecklare som gillar att lösa problem med
-        TypeScript. Just nu jobbar jag med att utveckla appen <a
-          href="https://nextgenclassroom.se"
-          target="_blank">Nextgen Classroom</a
-        > där jag är medgrundare.
-      </p>
-      <p>📍 Stockholm, Sverige</p>
-      <hr class="my-8" />
-      <div class="container mx-auto">
-        <h2 class="text-sm uppercase">Några av mina texter</h2>
-        <ul class="space-y-8">
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+      <section class="mb-16 text-center sm:text-left">
+        <h1
+          class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl mb-6"
+        >
+          🤠 Hej, jag heter Max!
+        </h1>
+        <div class="prose prose-lg text-gray-600 max-w-none">
+          <p>
+            Jag är en superbra full-stackutvecklare som gillar att lösa problem
+            med TypeScript. Just nu jobbar jag med att utveckla appen <a
+              href="https://nextgenclassroom.se"
+              target="_blank"
+              class="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-2"
+              >Nextgen Classroom</a
+            > där jag är medgrundare.
+          </p>
+          <p
+            class="font-medium text-gray-800 mt-4 flex items-center justify-center sm:justify-start gap-2"
+          >
+            <span>📍</span> Stockholm, Sverige
+          </p>
+        </div>
+      </section>
+
+      <div class="border-t border-gray-200 my-12"></div>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-8 text-gray-900">
+          Några av mina texter
+        </h2>
+        <div class="grid gap-6 sm:grid-cols-2">
           {
             posts.map((post) => (
-              <li>
-                <a href={`/${post.id}/`}>
-                  <h3 class="title">{post.data.title}</h3>
-                  <p class="text-sm text-gray-500">{post.data.description}</p>
-                  <p class="date text-sm">
-                    <FormattedDate date={post.data.date} />
+              <article class="group relative bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 flex flex-col h-full">
+                <div class="flex-1">
+                  <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200 mb-2">
+                    <a href={`/${post.id}/`}>
+                      <span class="absolute inset-0" />
+                      {post.data.title}
+                    </a>
+                  </h3>
+                  <p class="text-gray-500 mb-4 line-clamp-3 leading-relaxed text-sm">
+                    {post.data.description}
                   </p>
-                </a>
-              </li>
+                </div>
+                <div class="mt-4 flex items-center text-xs text-gray-400 font-medium uppercase tracking-wide">
+                  <FormattedDate date={post.data.date} />
+                </div>
+              </article>
             ))
           }
-        </ul>
-      </div>
+        </div>
+      </section>
     </main>
     <Footer />
   </body>

@@ -3,7 +3,7 @@ title: "Företagande.se bjuder in teknofeodalismen till Sverige"
 date: "2025-02-06"
 lang: "sv"
 tags: ["politik"]
-linkTo: false
+linkTo: true
 refs:
   - https://foretagande.se/opinion-debatt/trump-musk-och-doge-sparar-miljarder-medan-sverige-gar-pa-knana
   - https://www.vcinfodocs.com/
