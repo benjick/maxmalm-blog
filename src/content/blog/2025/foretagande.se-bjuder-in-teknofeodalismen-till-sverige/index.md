@@ -4,6 +4,7 @@ date: "2025-02-06"
 lang: "sv"
 tags: ["politik"]
 linkTo: true
+description: '"Trump, Musk och DOGE sparar miljarder – medan Sverige går på knäna"'
 refs:
   - https://foretagande.se/opinion-debatt/trump-musk-och-doge-sparar-miljarder-medan-sverige-gar-pa-knana
   - https://www.vcinfodocs.com/

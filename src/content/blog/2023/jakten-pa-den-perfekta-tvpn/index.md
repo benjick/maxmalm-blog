@@ -4,6 +4,7 @@ date: "2023-01-12"
 lang: "sv"
 tags: ["mat", "veganism"]
 linkTo: true
+description: "TVP, texturerat vegetabiliskt protein, är en billig köttersättningsprodukt med en otroligt lång hållbarhetstid."
 ---
 
 TVP, texturerat vegetabiliskt protein, är en billig köttersättningsprodukt med en otroligt lång hållbarhetstid. Jag äter oftast Anammas vegofärs, den passar verkligen till allt, men den har - precis som det mesta - blivit så dyr. Nu kostar 1 kg över 90 kronor på mitt lokala Coop. Tittar man på ingredienserna så är dom ganska simpla:
