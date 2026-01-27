@@ -4,7 +4,7 @@ date: "2020-08-17"
 lang: "sv"
 description: "Lokaltidningarna tar inget ansvar för sina kanaler i social medier. Varför är det så?"
 tags: ["rasism", "kapitalism"]
-linkTo: true
+linkTo: false
 paper:
   name: ETC
 ---

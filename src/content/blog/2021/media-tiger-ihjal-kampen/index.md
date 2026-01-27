@@ -4,7 +4,7 @@ date: "2021-07-02"
 lang: "sv"
 description: "Debattartikel om hur media blundar för klasskampen i tron om att tysta den"
 tags: ["kapitalism"]
-linkTo: true
+linkTo: false
 paper:
   name: VXOnews
   published: false

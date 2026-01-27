@@ -4,7 +4,7 @@ date: "2020-06-18"
 lang: "sv"
 description: "Kort text jag skrev efter Linköping Animals Saves 3-dagarsvigil utanför HKScan"
 tags: ["djurrätt"]
-linkTo: true
+linkTo: false
 ---
 
 Tre dagar utanför Hkscan med Linköping Animal Save. Ett av Sveriges största slakterier. Här dödas över 700 individer varje dag. Kor och får kommer inrullandes i transport efter transport. Det är varmt ute. Det måste vara över 25 grader. Jag tittar in en transport där fåren står tätt. Jag svettas och blir uttorkad av att vara ute i solen så jag häller i mig vatten. Jag undrar hur det känns att vara instängd i en transport i den här hettan utan att tillgång till vatten.
