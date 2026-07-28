@@ -1,0 +1,36 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import WunderkammerEntry from "../../components/WunderkammerEntry.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("wunderkammer");
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: entry,
+  }));
+}
+type Props = CollectionEntry<"wunderkammer">;
+
+const entry = Astro.props;
+---
+
+<html lang="sv">
+  <head>
+    <BaseHead
+      title={`${entry.data.title} - maxmalm.se`}
+      description={entry.data.description}
+    />
+  </head>
+  <body
+    class="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col"
+  >
+    <Header />
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+      <WunderkammerEntry entry={entry} />
+    </main>
+    <Footer />
+  </body>
+</html>

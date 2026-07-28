@@ -1,0 +1,40 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import WunderkammerEntry from "../../components/WunderkammerEntry.astro";
+import { SITE_TITLE } from "../../consts";
+import { getCollection } from "astro:content";
+
+const entries = (await getCollection("wunderkammer")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="sv">
+  <head>
+    <BaseHead
+      title={`Wunderkammer | ${SITE_TITLE}`}
+      description="Ett digitalt kuriosakabinett – favoriter från internet, bevarade för eftervärlden"
+    />
+  </head>
+  <body
+    class="bg-gray-50 text-gray-900 font-sans antialiased min-h-screen flex flex-col"
+  >
+    <Header />
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+      <section>
+        <h1 class="text-2xl font-bold mb-2 text-gray-900">Wunderkammer</h1>
+        <p class="text-gray-600 mb-8">
+          Ett digitalt kuriosakabinett – favoriter från internet, bevarade för
+          eftervärlden.
+        </p>
+        <div class="space-y-8">
+          {entries.map((entry) => <WunderkammerEntry entry={entry} linkTitle />)}
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

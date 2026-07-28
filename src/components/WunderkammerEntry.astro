@@ -1,0 +1,151 @@
+---
+import { type CollectionEntry, render } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
+import YouTubeEmbed from "./YouTubeEmbed.astro";
+
+type Props = {
+  entry: CollectionEntry<"wunderkammer">;
+  linkTitle?: boolean;
+};
+
+const { entry, linkTitle = false } = Astro.props;
+const { title, creator, date, source, youtube, archive, torrent, thumbnail } =
+  entry.data;
+const { Content } = await render(entry);
+const hasBody = Boolean(entry.body?.trim());
+const Heading = linkTitle ? "h2" : "h1";
+---
+
+<article
+  class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100"
+>
+  {youtube && <YouTubeEmbed id={youtube} title={title} thumbnail={thumbnail} />}
+
+  <header class="mt-6 mb-4">
+    <Heading class="text-xl font-semibold text-gray-900">
+      {
+        linkTitle ? (
+          <a
+            href={`/wunderkammer/${entry.id}/`}
+            class="hover:text-blue-600 transition-colors duration-200"
+          >
+            {title}
+          </a>
+        ) : (
+          title
+        )
+      }
+    </Heading>
+    <div
+      class="mt-1 text-xs text-gray-400 font-medium uppercase tracking-wide flex items-center gap-2"
+    >
+      {creator && <span>{creator}</span>}
+      {creator && <span aria-hidden="true">·</span>}
+      <FormattedDate date={date} />
+    </div>
+  </header>
+
+  {
+    hasBody && (
+      <div class="prose prose-slate max-w-none">
+        <Content />
+      </div>
+    )
+  }
+
+  <footer class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+    <a
+      href={source}
+      target="_blank"
+      class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
+    >
+      <svg
+        class="h-4 w-4"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M15 3h6v6" />
+        <path d="M10 14 21 3" />
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      </svg>
+      Källa
+    </a>
+    {
+      archive && (
+        <a
+          href={`https://archive.org/details/${archive}`}
+          target="_blank"
+          class="hidden items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
+        >
+          <svg
+            class="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M22.667 22.884V24H1.333v-1.116zm-.842-1.675v1.396H2.175v-1.396zM4.233 6.14l.234.118.118 1.882.117 3.058v2.941l-.117 3.666-.02 2.47-.332.098H3.062l-.352-.098-.136-2.47-.118-3.646v-2.941l.118-3.078.107-1.892.244-.107zm16.842 0l.235.118.117 1.882.117 3.058v2.941l-.117 3.666-.02 2.47-.332.098h-1.171l-.352-.098-.137-2.47-.117-3.646v-2.941l.117-3.078.108-1.892.244-.107zm-11.79 0l.235.118.117 1.882.117 3.058v2.941l-.117 3.666-.02 2.47-.331.098H8.114l-.352-.098-.136-2.47-.117-3.646v-2.941l.117-3.078.107-1.892.244-.107zm6.457 0l.234.118.117 1.882.118 3.058v2.941l-.118 3.666-.019 2.47-.332.098H14.57l-.351-.098-.137-2.47-.117-3.646v-2.941l.117-3.078.108-1.892.244-.107zm6.083-2.511V5.58H2.175V3.628zM11.798 0l10.307 2.347-.413.723H1.951l-.618-.587Z" />
+          </svg>
+          archive.org
+        </a>
+      )
+    }
+    {
+      archive && (
+        <a
+          href={`https://archive.org/details/${archive}`}
+          target="_blank"
+          class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
+        >
+          <svg
+            class="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M10 18v-7" />
+            <path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" />
+            <path d="M14 18v-7" />
+            <path d="M18 18v-7" />
+            <path d="M3 22h18" />
+            <path d="M6 18v-7" />
+          </svg>
+          archive.org
+        </a>
+      )
+    }
+    {
+      torrent && (
+        <a
+          href={torrent}
+          class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
+        >
+          <svg
+            class="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+            <path d="M12 18v-6" />
+            <path d="m9 15 3 3 3-3" />
+          </svg>
+          Torrent
+        </a>
+      )
+    }
+  </footer>
+</article>

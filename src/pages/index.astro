@@ -4,11 +4,16 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
 
 const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .filter((post) => post.data.linkTo);
+
+const wunderkammer = (await getCollection("wunderkammer"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 4);
 ---
 
 <!doctype html>
@@ -63,6 +68,74 @@ const posts = (await getCollection("blog"))
                 </div>
                 <div class="mt-4 flex items-center text-xs text-gray-400 font-medium uppercase tracking-wide">
                   <FormattedDate date={post.data.date} />
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <div class="border-t border-gray-200 my-12"></div>
+
+      <section>
+        <div class="flex items-baseline justify-between mb-8">
+          <h2 class="text-2xl font-bold text-gray-900">Wunderkammer</h2>
+          <a
+            href="/wunderkammer/"
+            class="text-sm font-medium text-blue-600 hover:text-blue-800"
+            >Se alla →</a
+          >
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+          {
+            wunderkammer.map((entry) => (
+              <article class="group relative overflow-hidden bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 flex flex-col aspect-video">
+                {entry.data.thumbnail && (
+                  <>
+                    <Image
+                      src={entry.data.thumbnail}
+                      alt=""
+                      width={800}
+                      class="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div class="absolute inset-0 bg-gray-900/70 group-hover:bg-gray-900/60 transition-colors duration-300" />
+                  </>
+                )}
+                <div class="relative p-6 flex flex-col flex-1 justify-end">
+                  <div>
+                    <h3
+                      class={`text-xl font-semibold transition-colors duration-200 mb-2 ${
+                        entry.data.thumbnail
+                          ? "text-white group-hover:text-blue-300"
+                          : "text-gray-900 group-hover:text-blue-600"
+                      }`}
+                    >
+                      <a href={`/wunderkammer/${entry.id}/`}>
+                        <span class="absolute inset-0" />
+                        {entry.data.title}
+                      </a>
+                    </h3>
+                    {entry.data.description && (
+                      <p
+                        class={`mb-4 line-clamp-3 leading-relaxed text-sm ${
+                          entry.data.thumbnail
+                            ? "text-gray-200"
+                            : "text-gray-500"
+                        }`}
+                      >
+                        {entry.data.description}
+                      </p>
+                    )}
+                  </div>
+                  <div
+                    class={`mt-4 flex items-center gap-2 text-xs font-medium uppercase tracking-wide ${
+                      entry.data.thumbnail ? "text-gray-300" : "text-gray-400"
+                    }`}
+                  >
+                    {entry.data.creator && <span>{entry.data.creator}</span>}
+                    {entry.data.creator && <span aria-hidden="true">·</span>}
+                    <FormattedDate date={entry.data.date} />
+                  </div>
                 </div>
               </article>
             ))

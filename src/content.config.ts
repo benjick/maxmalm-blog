@@ -21,4 +21,20 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const wunderkammer = defineCollection({
+  loader: glob({ base: "./src/content/wunderkammer", pattern: "**/*.{md,mdx}" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().optional(),
+      creator: z.string().optional(),
+      date: z.coerce.date(),
+      source: z.string().url(),
+      youtube: z.string().optional(),
+      archive: z.string().optional(),
+      torrent: z.string().url().optional(),
+      thumbnail: image().optional(),
+    }),
+});
+
+export const collections = { blog, wunderkammer };

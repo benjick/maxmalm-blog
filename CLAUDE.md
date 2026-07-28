@@ -17,9 +17,11 @@ There are no tests or linter.
 
 Personal blog (maxmalm.se, mostly Swedish content) built with Astro 5, Tailwind (v3 via `@astrojs/tailwind` + `@tailwindcss/typography`), MDX, sitemap, and RSS.
 
-### Content collection → URLs
+### Content collections → URLs
 
-Everything revolves around the single `blog` collection defined in `src/content.config.ts`, loaded via glob from `src/content/blog/**/*.{md,mdx}`. Each post is a directory (e.g. `src/content/blog/2025/<slug>/index.md`, legacy posts under `src/content/blog/blog/<date-slug>/index.md`) with images co-located next to `index.md`.
+Two collections are defined in `src/content.config.ts`: `blog` (posts) and `wunderkammer` (curated works from the internet — embeds with preservation links).
+
+The `blog` collection is loaded via glob from `src/content/blog/**/*.{md,mdx}`. Each post is a directory (e.g. `src/content/blog/2025/<slug>/index.md`, legacy posts under `src/content/blog/blog/<date-slug>/index.md`) with images co-located next to `index.md`.
 
 The post's collection id is its directory path relative to `src/content/blog`, and `src/pages/[...slug].astro` (a root-level catch-all) uses that id directly as the URL — so `2025/foo/index.md` is served at `/2025/foo/`. Renaming or moving a post directory changes its public URL.
 
@@ -33,10 +35,14 @@ Schema in `src/content.config.ts`:
 - `refs` (optional): list of URLs rendered as a "Referenser" section at the bottom of the post.
 - `paper` (optional): tracks a submission to a newspaper; `BlogPost.astro` renders a footer note with three states — published (`published: true`, optionally with `url`), rejected (`published: false`), or pending (only `name` set).
 
+### Wunderkammer collection
+
+Curated internet finds live flat (no year) under `src/content/wunderkammer/<slug>/index.md`, served at `/wunderkammer/<slug>/` with a feed page at `/wunderkammer/`. Schema fields: `title`, `date` (when added), `source` (original URL, required), and optional `description`, `creator`, `youtube` (video id → youtube-nocookie embed via `YouTubeEmbed.astro`), `archive` (archive.org identifier → renders an archive.org link; only set for items that actually exist on archive.org), `torrent` (URL → renders a torrent download link; verify the URL exists before setting it, since not all IA items have an `_archive.torrent` file), `thumbnail` (local image → frontpage card background and click-to-play facade on entry pages). The markdown body is commentary. `WunderkammerEntry.astro` renders an item on both the feed and permalink pages. The four latest items appear on the homepage; all items are merged into the RSS feed alongside blog posts.
+
 ### Pages/layouts
 
-- `src/pages/index.astro` — homepage with bio + featured (`linkTo: true`) posts
+- `src/pages/index.astro` — homepage with bio + featured (`linkTo: true`) posts + latest wunderkammer items
 - `src/pages/arkiv.astro` — all posts
-- `src/pages/rss.xml.js` — RSS feed at `/rss.xml`
+- `src/pages/rss.xml.js` — RSS feed at `/rss.xml` (blog + wunderkammer)
 - `src/layouts/BlogPost.astro` — post layout, including the `paper`/`refs` sections
 - `src/consts.ts` — site title/description

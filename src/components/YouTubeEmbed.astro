@@ -1,0 +1,70 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+type Props = {
+  id: string;
+  title: string;
+  thumbnail?: ImageMetadata;
+};
+
+const { id, title, thumbnail } = Astro.props;
+const embedUrl = `https://www.youtube-nocookie.com/embed/${id}`;
+---
+
+{
+  thumbnail ? (
+    <button
+      type="button"
+      data-youtube-facade
+      data-embed-url={`${embedUrl}?autoplay=1`}
+      data-embed-title={title}
+      aria-label={`Spela upp: ${title}`}
+      class="group/embed relative flex items-center justify-center w-full aspect-video rounded-xl overflow-hidden shadow-lg cursor-pointer"
+    >
+      <Image
+        src={thumbnail}
+        alt=""
+        width={1280}
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <span class="absolute inset-0 bg-gray-900/30 group-hover/embed:bg-gray-900/10 transition-colors duration-300" />
+      <span class="relative flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg group-hover/embed:scale-110 transition-transform duration-200">
+        <svg
+          class="h-7 w-7 translate-x-0.5 text-gray-900"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M8 5.14v13.72L19 12 8 5.14z" />
+        </svg>
+      </span>
+    </button>
+  ) : (
+    <iframe
+      src={embedUrl}
+      title={title}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      loading="lazy"
+      class="aspect-video w-full rounded-xl shadow-lg border-0"
+    />
+  )
+}
+
+<script>
+  document.addEventListener("click", (event) => {
+    const button = (event.target as HTMLElement).closest<HTMLElement>(
+      "[data-youtube-facade]"
+    );
+    if (!button) return;
+    const iframe = document.createElement("iframe");
+    iframe.src = button.dataset.embedUrl ?? "";
+    iframe.title = button.dataset.embedTitle ?? "";
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    iframe.className = "aspect-video w-full rounded-xl shadow-lg border-0";
+    button.replaceWith(iframe);
+  });
+</script>
