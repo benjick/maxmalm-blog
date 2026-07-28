@@ -8,11 +8,17 @@ import FormattedDate from "../components/FormattedDate.astro";
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, date, refs, paper, lang } = Astro.props;
+
+const ogImage = `/open-graph${Astro.url.pathname.replace(/\/$/, "")}.png`;
 ---
 
 <html lang={lang}>
   <head>
-    <BaseHead title={`${title} - maxmalm.se`} description={description} />
+    <BaseHead
+      title={`${title} - maxmalm.se`}
+      description={description}
+      image={ogImage}
+    />
   </head>
 
   <body
