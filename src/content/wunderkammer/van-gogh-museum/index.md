@@ -4,6 +4,7 @@ description: "Den permanenta utställningen i Amsterdam"
 creator: "Vincent van Gogh"
 date: "2026-07-29"
 source: "https://www.vangoghmuseum.nl/en/visit/whats-on/permanent-collection"
+thumbnail: "./thumbnail.webp"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
