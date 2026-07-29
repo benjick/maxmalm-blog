@@ -5,6 +5,10 @@ creator: "Vincent van Gogh"
 date: "2026-07-29"
 source: "https://www.vangoghmuseum.nl/en/visit/whats-on/permanent-collection"
 thumbnail: "./thumbnail.webp"
+location:
+  lng: 4.8811
+  lat: 52.3584
+  zoom: 15
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod

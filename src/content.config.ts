@@ -34,6 +34,13 @@ const wunderkammer = defineCollection({
       archive: z.string().optional(),
       torrent: z.string().url().optional(),
       thumbnail: image().optional(),
+      location: z
+        .object({
+          lng: z.number(),
+          lat: z.number(),
+          zoom: z.number().default(14),
+        })
+        .optional(),
     }),
 });
 

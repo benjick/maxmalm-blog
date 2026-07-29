@@ -1,0 +1,55 @@
+---
+type Props = {
+  lng: number;
+  lat: number;
+  zoom?: number;
+};
+
+const { lng, lat, zoom = 14 } = Astro.props;
+---
+
+<div
+  data-map-embed
+  data-lng={lng}
+  data-lat={lat}
+  data-zoom={zoom}
+  class="mt-6 h-72 w-full rounded-xl overflow-hidden shadow-lg"
+></div>
+
+<style is:global>
+  /* Tailwind's preflight (img { height: auto }) overrides the logo control's
+     height attribute; restore the license-mandated 24px logo size. */
+  .maptoolkit-logo-control img {
+    height: 24px;
+    width: auto;
+    max-width: none;
+  }
+</style>
+
+<script>
+  import maplibregl from "maplibre-gl";
+  import { MaptoolkitLogoControl } from "@maptoolkit/maplibre-gl-logo";
+  import "maplibre-gl/dist/maplibre-gl.css";
+
+  document.querySelectorAll<HTMLElement>("[data-map-embed]").forEach((el) => {
+    const lng = parseFloat(el.dataset.lng ?? "0");
+    const lat = parseFloat(el.dataset.lat ?? "0");
+    const zoom = parseFloat(el.dataset.zoom ?? "14");
+    const map = new maplibregl.Map({
+      container: el,
+      style: "https://styles.maptoolkit.org/summer.json",
+      center: [lng, lat],
+      zoom,
+      cooperativeGestures: true,
+    });
+    map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
+    map.addControl(new MaptoolkitLogoControl());
+    new maplibregl.Marker().setLngLat([lng, lat]).addTo(map);
+    // The Community License requires the © line visible at all times, so
+    // force the attribution control open instead of letting it collapse.
+    map.on("load", () => {
+      const attrib = el.querySelector(".maplibregl-ctrl-attrib");
+      if (attrib instanceof HTMLDetailsElement) attrib.open = true;
+    });
+  });
+</script>
