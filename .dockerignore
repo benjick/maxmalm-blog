@@ -1,0 +1,12 @@
+.astro
+.git
+.github
+.idea
+.vercel
+.vscode
+dist
+node_modules
+*.log
+.DS_Store
+.env
+.env.production
