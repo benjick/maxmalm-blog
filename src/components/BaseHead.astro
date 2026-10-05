@@ -49,3 +49,23 @@ const socialImageURL = image ? new URL(image, Astro.site) : undefined;
 <!-- Plausible -->
 <script defer data-domain="maxmalm.se" src="https://plausible.io/js/script.js"
 ></script>
+
+<!-- Our analytics app on Realm, alongside Plausible. is:inline keeps Astro from
+     bundling the remote module. A click on a link with data-event sends that
+     event, with the link's other data-* attributes as properties. -->
+<script
+  is:inline
+  type="module"
+  src="https://analytics-vd3-api.w1.ok2m.yourrealm.me/script.js"
+  data-entity="g0jd162spv1k"
+  data-exit="false"
+></script>
+<script is:inline type="module">
+  import { event } from "https://analytics-vd3-api.w1.ok2m.yourrealm.me/script.js";
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest?.("a[data-event]");
+    if (!a) return;
+    const { event: name, ...properties } = a.dataset;
+    event(name, { properties }).catch(() => {});
+  });
+</script>

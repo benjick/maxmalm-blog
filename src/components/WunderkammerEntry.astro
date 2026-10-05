@@ -84,6 +84,9 @@ const Heading = linkTitle ? "h2" : "h1";
     <a
       href={source}
       target="_blank"
+      data-event="wunderkammer_link"
+      data-kind="source"
+      data-item={entry.id}
       class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
     >
       <svg
@@ -107,6 +110,9 @@ const Heading = linkTitle ? "h2" : "h1";
         <a
           href={`https://archive.org/details/${archive}`}
           target="_blank"
+          data-event="wunderkammer_link"
+          data-kind="archive"
+          data-item={entry.id}
           class="hidden items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
         >
           <svg
@@ -126,6 +132,9 @@ const Heading = linkTitle ? "h2" : "h1";
         <a
           href={`https://archive.org/details/${archive}`}
           target="_blank"
+          data-event="wunderkammer_link"
+          data-kind="archive"
+          data-item={entry.id}
           class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
         >
           <svg
@@ -153,6 +162,9 @@ const Heading = linkTitle ? "h2" : "h1";
       torrent && (
         <a
           href={torrent}
+          data-event="wunderkammer_link"
+          data-kind="torrent"
+          data-item={entry.id}
           class="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors duration-200"
         >
           <svg

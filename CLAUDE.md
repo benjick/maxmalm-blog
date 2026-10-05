@@ -50,3 +50,7 @@ Curated internet finds live flat (no year) under `src/content/wunderkammer/<slug
 - `src/pages/rss.xml.js` — RSS feed at `/rss.xml` (blog + wunderkammer)
 - `src/layouts/BlogPost.astro` — post layout, including the `paper`/`refs` sections
 - `src/consts.ts` — site title/description
+
+### Analytics
+
+Page views go to Plausible and to our own analytics app on Realm (site `g0jd162spv1k`), both from `src/components/BaseHead.astro`. The analytics app's script tags need `is:inline`. Wunderkammer links send a `wunderkammer_link` event (`kind`: source, archive or torrent; `item`: the entry id) through their `data-*` attributes.
