@@ -9,4 +9,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://maxmalm.se",
   integrations: [mdx(), sitemap(), tailwind()],
+  // No inline <style> or <script>: the CSP in realm.ts allows neither.
+  build: { inlineStylesheets: "never" },
+  vite: { build: { assetsInlineLimit: 0 } },
 });

@@ -54,3 +54,7 @@ Curated internet finds live flat (no year) under `src/content/wunderkammer/<slug
 ### Analytics
 
 Page views go to Plausible and to our own analytics app on Realm (site `g0jd162spv1k`), both from `src/components/BaseHead.astro`. The analytics app's script tags need `is:inline`. Wunderkammer links send a `wunderkammer_link` event (`kind`: source, archive or torrent; `item`: the entry id) through their `data-*` attributes.
+
+### Content-Security-Policy
+
+The CSP is set on the router in `realm.ts`. A new third-party origin (script, tracker, tiles, embed, image host) needs its directive there. `astro.config.mjs` keeps styles and scripts out of the HTML (`inlineStylesheets: "never"`, `assetsInlineLimit: 0`), so don't add inline `<script>` or `<style>`: put code in a file.

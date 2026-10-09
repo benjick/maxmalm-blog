@@ -20,6 +20,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.4
         version: 5.1.4(astro@5.18.2(jiti@1.21.7)(rollup@4.62.3)(typescript@5.7.2)(yaml@2.6.1))(tailwindcss@3.4.17)
+      '@fontsource/inter':
+        specifier: ^5.3.0
+        version: 5.3.0
       '@maptoolkit/maplibre-gl-logo':
         specifier: ^0.1.0
         version: 0.1.0(maplibre-gl@5.24.0)
@@ -431,6 +434,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/inter@5.3.0':
+    resolution: {integrity: sha512-RofMylZmjlJEfELXeNHFWBRcSs75rGU/6bV2S2jfnvv/3rPXPGe0LgUJTklcHZ9lM4OZmAVFhcJPnACfb91A3g==}
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -2947,6 +2953,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.7':
     optional: true
+
+  '@fontsource/inter@5.3.0': {}
 
   '@img/colour@1.1.0':
     optional: true

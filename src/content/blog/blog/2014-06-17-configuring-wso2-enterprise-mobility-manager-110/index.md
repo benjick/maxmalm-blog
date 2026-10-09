@@ -11,7 +11,7 @@ Default user:password is **admin:admin**.
 
 Go to Multitenancy > Add new tenant and fill in all fields.
 
-![Alt text](http://i.imgur.com/kWBkxEL.png)
+![Alt text](https://i.imgur.com/kWBkxEL.png)
 
 Save and go to https://172.16.1.123:9443/emm and login with your new credentials. In my case admin@maxmalm.se and the password I picked.
 

@@ -5,6 +5,6 @@ lang: "en"
 tags: [wso2, linux, sysadmin]
 ---
 
-![](http://i.imgur.com/OvJsi27.png)
+![](https://i.imgur.com/OvJsi27.png)
 
-![](http://i.imgur.com/1BbDpLZ.png)
+![](https://i.imgur.com/1BbDpLZ.png)

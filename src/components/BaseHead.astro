@@ -1,6 +1,10 @@
 ---
 // Import the app.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
 import "../styles/app.css";
 
 interface Props {
@@ -52,7 +56,8 @@ const socialImageURL = image ? new URL(image, Astro.site) : undefined;
 
 <!-- Our analytics app on Realm, alongside Plausible. is:inline keeps Astro from
      bundling the remote module. A click on a link with data-event sends that
-     event, with the link's other data-* attributes as properties. -->
+     event, with the link's other data-* attributes as properties
+     (public/analytics-events.js; a file, not inline, for the CSP in realm.ts). -->
 <script
   is:inline
   type="module"
@@ -60,12 +65,4 @@ const socialImageURL = image ? new URL(image, Astro.site) : undefined;
   data-entity="g0jd162spv1k"
   data-exit="false"
 ></script>
-<script is:inline type="module">
-  import { event } from "https://analytics-vd3-api.w1.ok2m.yourrealm.me/script.js";
-  document.addEventListener("click", (e) => {
-    const a = e.target.closest?.("a[data-event]");
-    if (!a) return;
-    const { event: name, ...properties } = a.dataset;
-    event(name, { properties }).catch(() => {});
-  });
-</script>
+<script is:inline type="module" src="/analytics-events.js"></script>

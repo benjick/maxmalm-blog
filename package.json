@@ -15,6 +15,7 @@
     "@astrojs/rss": "^4.0.10",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.4",
+    "@fontsource/inter": "^5.3.0",
     "@maptoolkit/maplibre-gl-logo": "^0.1.0",
     "@tailwindcss/typography": "^0.5.19",
     "astro": "^5.18.2",
